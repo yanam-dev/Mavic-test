@@ -1,0 +1,55 @@
+$txt-color: #fff;
+
+
+
+
+@mixin SFP-f400 {
+    font-weight: 400;
+    font-family: 'SFProDisplay-Light', sans-serif;
+}
+@mixin SFP-f600 {
+    font-weight: 600;
+    font-family: 'SFProDisplay-Light', sans-serif;
+}
+%sfp-title{
+    font-weight: 400;
+    font-family: 'SFProDisplay-Light', sans-serif;
+    font-size: 44px;
+    line-height: 53px;
+}
+%ubuntu-light{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+%ubuntu-regular{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+%ubuntu-medium{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+%ubuntu-bold{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+@mixin menu-style{
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 17px;
+    color: $txt-color;
+}
+%btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+%socials-hover{
+    opacity: 0.5;
+    transition: all .3s;
+    &:hover{
+        opacity: 1;
+    }
+}

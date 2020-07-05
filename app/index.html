@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mavic Drone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -12,70 +13,69 @@
     <div class="content">
     <header class="header" id="header" style="background-image: url('images/top-bg.jpg')">
       <div class="container">
-        <div class="header__inner">
+        <div class="header__top d-flex justify-content-between align-items-center">
           <a href="index.html" class="logo" target="_self">
             <picture class="logo-img">
               <source src="images/logo-mobile.png" media="(max-width:640px)">
               <img src="images/logo.png" alt="Logo">
             </picture>
           </a>
-        </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="http://">О ДРОНЕ</a>  
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="http://">ПРЕИМУЩЕСТВА</a>  
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="http://">ХАРАКТЕРИСТИКА</a>  
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="http://">ВОПРОСЫ</a>  
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="http://">КОНТАКТЫ</a>  
-            </li>
-          </ul>
-        </nav>
-        <div class="header__order">
-          <button type="submit" class="btn">Купить</button>
-          <a href="tel:80662233222" class="phone">8 (066) 22 33 222</a>
-        </div>
-          <div class="header__top">
-            <h1 class="top__title">Mavic 2 Pro</h1>
-            <img class="top__img" src="images/mavic.png" alt="Mavic 2">
-            <p class="top__txt">Квадрокоптер Dji Mavic 2 Pro <br>
-              с профессиональной камерой Hasselblad</p>
-              <ul class="top__social-list">
-                <li class="top__social-item">
-                  <a href="#" class="top__socials-fb" target="_blank">
-                    <img src="images/icons/fb.svg" alt="Facebook">
-                  </a>
-                </li> 
-                <li class="top__social-item">
-                  <a href="#" class="top__socials-yt" target="_blank">
-                    <img src="images/icons/yt.svg" alt="Youtube">
-                  </a>
-                </li> 
-                <li class="top__social-item">
-                  <a href="#" class="top__socials-ig" target="_blank">
-                    <img src="images/icons/ig.svg" alt="Instagram">
-                  </a>
-                </li> 
-              </ul>
+          <nav class="menu">
+            <ul class="menu__list d-flex justify-content-between align-items-center">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#about">О ДРОНЕ</a>  
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#benefit">ПРЕИМУЩЕСТВА</a>  
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#property">ХАРАКТЕРИСТИКА</a>  
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#query">ВОПРОСЫ</a>  
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#contact">КОНТАКТЫ</a>  
+              </li>
+            </ul>
+          </nav>
+          <div class="header__order">
+            <button type="submit" class="btn">Купить</button>
+            <a href="tel:80662233222" class="phone">8 (066) 22 33 222</a>
           </div>
         </div>
-        <div class="scroll__btn">
-          <a href="#">
-            <img src="images/arrow-down.svg" alt="Arrow">
-          </a>
+        <div class="header__content d-flex">
+          <h1 class="header__title">Mavic 2 Pro</h1>
+          <img class="header__img" src="images/mavic.png" alt="Mavic 2">
+          <p class="header__txt">Квадрокоптер Dji Mavic 2 Pro <br>
+            с профессиональной камерой Hasselblad</p>
+          <ul class="social-list d-flex">
+            <li class="social-list-item">
+              <a href="#" class="social-fb" target="_blank">
+                <img src="images/icons/fb.svg" alt="Facebook">
+              </a>
+            </li> 
+            <li class="social-list-item">
+              <a href="#" class="social-yt" target="_blank">
+                <img src="images/icons/yt.svg" alt="Youtube">
+              </a>
+            </li> 
+            <li class="social-list-item">
+              <a href="#" class="social-ig" target="_blank">
+                <img src="images/icons/ig.svg" alt="Instagram">
+              </a>
+            </li> 
+          </ul>
+          <div class="scroll__btn">
+            <a href="#about">
+              <img src="images/icons/arrow-down.svg" alt="Arrow">
+            </a>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="page-section about">
+      <section id="about" class="page-section about">
         <div class="container"> 
           <h3 class="about__title title">Что такое Mavic 2 Pro?</h3>
           <div class="about__inner">
@@ -109,13 +109,13 @@
           </div>
         </div>
         <div class="scroll__btn">
-          <a href="#">
-            <img src="images/arrow-down.svg" alt="Arrow">
+          <a href="#benefit">
+            <img src="images/icons/arrow-down.svg" alt="Arrow">
           </a>
         </div>
       </section>
 
-      <section class="page-section benefit">
+      <section id="benefit" class="page-section benefit">
         <div class="container"> 
           <h3 class="benefit__title title">Преимущества</h3>
           <div class="benefit__items">
@@ -171,15 +171,14 @@
           </div>
         </div>
         <div class="scroll__btn">
-          <a href="#">
-            <img src="images/arrow-down.svg" alt="Arrow">
+          <a href="#property">
+            <img src="images/icons/arrow-down.svg" alt="Arrow">
           </a>
         </div>
       </section>
-
-      <section class="page-section property">
+      <section id="property" class="page-section property">
         <div class="container"> 
-          <h3 class="property__title title"></h3>
+          <h3 class="property__title title">Характеристика</h3>
           <div class="property__inner">
             <div class="property__content">
               <div class="content__box">
@@ -213,13 +212,13 @@
           </div>
         </div>
         <div class="scroll__btn">
-          <a href="#">
-            <img src="images/arrow-down.svg" alt="Arrow">
+          <a href="#query">
+            <img src="images/icons/arrow-down.svg" alt="Arrow">
           </a>
         </div>
       </section>
 
-      <section class="page-section query">
+      <section id="query" class="page-section query">
         <div class="container"> 
           <h3 class="query__title title">Остались вопросы?</h3>
           <div class="query__items">
@@ -254,13 +253,12 @@
           </div>
         </div>
         <div class="scroll__btn">
-          <a href="#">
-            <img src="images/arrow-down.svg" alt="Arrow">
+          <a href="#contact">
+            <img src="images/icons/arrow-down.svg" alt="Arrow">
           </a>
         </div>
       </section>
-
-      <section class="page-section contact">
+      <section id="contact" class="page-section contact">
         <div class="container"> 
           <h3 class="contact__title title">Контакты</h3>
           <div class="contact__inner">
@@ -291,19 +289,19 @@
                 <button class="btn" type="submit">ОТПРАВИТЬ</button>
               </form>
             </div>
-            <ul class="contact__social-list top__social-list">
-              <li class="top__social-item">
-                <a href="#" class="top__socials-fb" target="_blank">
+            <ul class="social-list d-flex">
+              <li class="social-list-item">
+                <a href="#" class="social-fb" target="_blank">
                   <img src="images/icons/fb.svg" alt="Facebook">
                 </a>
               </li> 
-              <li class="top__social-item">
-                <a href="#" class="top__socials-yt" target="_blank">
+              <li class="social-list-item">
+                <a href="#" class="social-yt" target="_blank">
                   <img src="images/icons/yt.svg" alt="Youtube">
                 </a>
               </li> 
-              <li class="top__social-item">
-                <a href="#" class="top__socials-ig" target="_blank">
+              <li class="social-list-item">
+                <a href="#" class="social-ig" target="_blank">
                   <img src="images/icons/ig.svg" alt="Instagram">
                 </a>
               </li> 

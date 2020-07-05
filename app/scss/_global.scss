@@ -1,5 +1,9 @@
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
 }
 *,*::before, *::after{
     box-sizing: inherit;
@@ -7,22 +11,17 @@ html{
 body{
     min-width: 320px;
     overflow-x: hidden;
-    color: #FFFFFF;
+    color: $txt-color;
     position: relative;
-    background-color: antiquewhite;
+    @extend %ubuntu-light;
 }
-
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
 a{
     display: inline-block;
     text-decoration: none;
-}
-nav ul li a{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 17px;
-    color: #FFFFFF;
 }
 ul,li{
     list-style: none;
@@ -34,22 +33,65 @@ h1, h2, h3, h4, h5, h6{
     font-size: inherit;
 }
 h1{
-    font-family: SF Pro Display;
-    font-style: normal;
-    font-weight: 600;
+    @include SFP-f600;
     font-size: 96px;
     line-height: 115px;
 }
 h3{
+    @extend %sfp-title;
     font-style: normal;
-    font-weight: normal;
+    text-transform: capitalize;
     font-size: 44px;
     line-height: 53px;
 }
 h4{
+    @extend %ubuntu-bold;
     font-size: 21px;
-    color: #f4f4f9;
-    font-weight: 400;
+    line-height: 24px;
+}
+a, label{
+    -webkit-tap-highlight-color: transparent;
+}
+img {
+    display: block;
+}
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
+}
+.d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+input,
+select,
+textarea{
+    outline: none;
+    cursor: pointer;
+    border-radius: 0px;
+    resize: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+a,
+button:focus,
+select:focus {
+	box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 .wrapper{
     display: flex;
@@ -66,11 +108,21 @@ h4{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    position: relative;
+    padding: 74px 0 30px;
 }
-#header{
-    min-height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+.footer{
+    flex: 0 0 auto; 
+}
+.title{
+    padding-left: 26px;
+    margin-bottom: 55px;
+}
+.scroll__btn{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 13px 0 30px;
+    text-align: center;
 }
