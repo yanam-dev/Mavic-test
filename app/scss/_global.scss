@@ -9,6 +9,7 @@ body{
     overflow-x: hidden;
     color: #FFFFFF;
     position: relative;
+    background-color: antiquewhite;
 }
 
 a{
@@ -50,21 +51,26 @@ h4{
     color: #f4f4f9;
     font-weight: 400;
 }
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
 .page-section{
     min-height: 100vh;
-    // width: 100vw;
+    width: 100vw;
     background-image: url('../images/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    position: relative;
 }
-.top{
-    height: 100vh;
-    // width: 100vw;
-    background-image: url('../images/top-bg.jpg');
+#header{
+    min-height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    position: absolute;
 }
