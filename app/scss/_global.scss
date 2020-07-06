@@ -5,7 +5,9 @@ html{
     -ms-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
 }
-*,*::before, *::after{
+*,
+*::before, 
+*::after {
     box-sizing: inherit;
 }
 body{
@@ -14,16 +16,20 @@ body{
     color: $txt-color;
     position: relative;
     @extend %ubuntu-light;
+    font-size: 17px;
+    line-height: 26px;
 }
 .container{
     max-width: 1270px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 a{
     display: inline-block;
     text-decoration: none;
 }
 ul,li{
+    display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -40,7 +46,7 @@ h1{
 h3{
     @extend %sfp-title;
     font-style: normal;
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 44px;
     line-height: 53px;
 }
@@ -109,7 +115,16 @@ button:not(:disabled) {
     background-size: cover;
     background-position: top center;
     position: relative;
-    padding: 74px 0 30px;
+    padding: 150px 0 30px;
+    &:before{
+        background: linear-gradient(119.35deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
 }
 .footer{
     flex: 0 0 auto; 
@@ -123,6 +138,6 @@ button:not(:disabled) {
     right: 0;
     left: 0;
     bottom: 0;
-    padding: 13px 0 30px;
+    padding: 13px 0 30px 0;
     text-align: center;
 }

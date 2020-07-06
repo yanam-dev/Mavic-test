@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <div class="content">
-    <header class="header" id="header" style="background-image: url('images/top-bg.jpg')">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__top d-flex justify-content-between align-items-center">
           <a href="index.html" class="logo" target="_self">
@@ -44,41 +44,45 @@
             <a href="tel:80662233222" class="phone">8 (066) 22 33 222</a>
           </div>
         </div>
-        <div class="header__content d-flex">
-          <h1 class="header__title">Mavic 2 Pro</h1>
-          <img class="header__img" src="images/mavic.png" alt="Mavic 2">
-          <p class="header__txt">Квадрокоптер Dji Mavic 2 Pro <br>
-            с профессиональной камерой Hasselblad</p>
-          <ul class="social-list d-flex">
-            <li class="social-list-item">
-              <a href="#" class="social-fb" target="_blank">
-                <img src="images/icons/fb.svg" alt="Facebook">
-              </a>
-            </li> 
-            <li class="social-list-item">
-              <a href="#" class="social-yt" target="_blank">
-                <img src="images/icons/yt.svg" alt="Youtube">
-              </a>
-            </li> 
-            <li class="social-list-item">
-              <a href="#" class="social-ig" target="_blank">
-                <img src="images/icons/ig.svg" alt="Instagram">
-              </a>
-            </li> 
-          </ul>
-          <div class="scroll__btn">
-            <a href="#about">
-              <img src="images/icons/arrow-down.svg" alt="Arrow">
-            </a>
-          </div>
-        </div>
       </div>
     </header>
     <main>
+      <section class="top d-flex" style="background-image: url('images/top-bg.jpg')">
+        <div class="container">
+          <div class="top__content d-flex">
+            <h1 class="top__title">Mavic 2 Pro</h1>
+            <img class="top__img" src="images/mavic.png" alt="Mavic 2">
+            <p class="top__txt">Квадрокоптер Dji Mavic 2 Pro
+            с профессиональной камерой Hasselblad</p>
+            <ul class="social-list d-flex">
+              <li class="social-list-item">
+                <a href="#" class="social-fb" target="_blank">
+                  <img src="images/icons/fb.svg" alt="Facebook">
+                </a>
+              </li> 
+              <li class="social-list-item">
+                <a href="#" class="social-yt" target="_blank">
+                  <img src="images/icons/yt.svg" alt="Youtube">
+                </a>
+              </li> 
+              <li class="social-list-item">
+                <a href="#" class="social-ig" target="_blank">
+                  <img src="images/icons/ig.svg" alt="Instagram">
+                </a>
+              </li> 
+            </ul>
+            <div class="scroll__btn">
+              <a href="#about">
+                <img src="images/icons/arrow-down.svg" alt="Arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="about" class="page-section about">
         <div class="container"> 
           <h3 class="about__title title">Что такое Mavic 2 Pro?</h3>
-          <div class="about__inner">
+          <div class="about__inner d-flex justify-content-between">
             <div class="about__txt">
               <p>
                 Дрон Mavic 2 Pro - это инженерное чудо, идеальное для аэросъемки. Дрон обладает всеми лучшими технологиями DJI, он преобразит мир аэросъемки.
@@ -91,18 +95,18 @@
               <p class="about__slider-txt">Лучшая беспилотная
                 технология аэросъемки
               </p>
-              <div class="about__slider">
+              <div class="about__slider d-flex">
                 <div class="about__slider-item">
                   <img class="about__slider-img" src="images/slide-1.jpg" alt="">
                 </div>
                 <div class="about__slider-item">
-                  <img class="about__slider-img" src="images/slide-2.png" alt=""> 
+                  <img class="about__slider-img" src="images/slide-1.jpg" alt=""> 
                 </div>
                 <div class="about__slider-item">
-                  <img class="about__slider-img" src="images/slide-3.png" alt=""> 
+                  <img class="about__slider-img" src="images/slide-1.jpg" alt=""> 
                 </div>
                 <div class="about__slider-item">  
-                  <img class="about__slider-img" src="images/slide-4.png" alt=""> 
+                  <img class="about__slider-img" src="images/slide-1.jpg" alt=""> 
                 </div>
               </div>
             </div>
@@ -118,8 +122,8 @@
       <section id="benefit" class="page-section benefit">
         <div class="container"> 
           <h3 class="benefit__title title">Преимущества</h3>
-          <div class="benefit__items">
-            <div class="benefit__item">
+          <div class="benefit__items d-flex">
+            <div class="benefit__item benefit__item-1">
               <div class="benefit__num">1</div>
               <div class="benefit__img">
                 <img src="images/benefit-1.jpg" alt="">
@@ -128,11 +132,11 @@
                 <h4 class="info-title">Интеллектуальные
                   режимы
                 </h4>
-                <p class="info-txt">Mavic 2 унаследовал 6 стандартных режимов     интеллектуальной съемки QuickShot:Roket/Dronie/Circle/Helix/Boomerang/Asteroid.
+                <p class="info-txt">Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки QuickShot: Roket / Dronie / Circle / Helix / Boomerang / Asteroid.
                 </p>
               </div>
             </div>
-            <div class="benefit__item">
+            <div class="benefit__item benefit__item-2">
               <div class="benefit__num">2</div>
               <div class="benefit__img">
                 <img src="images/benefit-2.jpg" alt="">
@@ -143,14 +147,14 @@
                 </p>
               </div>
             </div>
-            <div class="benefit__item">
+            <div class="benefit__item benefit__item-3">
               <div class="benefit__num">3</div>
               <div class="benefit__img">
                 <img src="images/benefit-3.jpg" alt="">
               </div>
               <div class="benefit__info">
                 <h4 class="info-title">Панорамная съемка</h4>
-                <p class="info-txt">Mavic 2 унаследовал 6 стандартных режимов     интеллектуальной съемки QuickShot:Roket/Dronie/Circle/Helix/Boomerang/Asteroid.
+                <p class="info-txt">Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки QuickShot : Roket / Dronie / Circle / Helix / Boomerang / Asteroid.
                 </p>
               </div>
             </div>
@@ -307,18 +311,18 @@
               </li> 
             </ul>
           </div>
+          <div class="copy">
+              &#169; DJI, 2020
+          </div>
         </div>
       </section>
     </main>
-  </div>
-  <footer class="footer">
+
+  <!-- <footer class="footer">
     <div class="container">
-      <p class="footer__copy">
-          &#169; DJI, 2020
-      </p>
+      
     </div>
-  </footer>
-</div>
+  </footer> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
