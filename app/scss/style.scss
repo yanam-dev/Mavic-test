@@ -161,12 +161,10 @@
     }
     &__items{
         flex-wrap: wrap;
-        justify-content: space-between;
         .benefit__num{
             font-style: normal;
             @extend %ubuntu-bold;
             font-size: 36px;
-            line-height: 41px;
             margin-right: 10px;
         }
         .benefit__item{
@@ -176,24 +174,44 @@
             margin-bottom: 100px;
             margin-left: 32px;
             margin-top: -8px;
-            &::nth-child(even){
-                margin-left: 40px;
+            &:nth-child(even){
+                margin-left: 56px;
+                transform: translateY(16px);
+                margin-right: 12px;
             }
-           
         }
         .benefit__item-1{
-            position: relative;
+            @include wave-decor;
             &:before{
-                content: '';
-                position: absolute;
+                background-image: url(../images/wave-0.svg);
                 width: 245px;
-                height: 45px;
-                background-image: url(../images/wave-1.svg);
-                background-repeat: no-repeat;
-                background-position: 0 0;
+                height: 50px;
                 top: 30px;
                 right: -60px;
             }
+        }
+        .benefit__item-2{
+            @include wave-decor;
+            &:before{
+                background-image: url(../images/wave-2.svg);
+                width: 463px;
+                height: 63px;
+                left: -457px;
+                top: 162px;
+            }
+        }
+        .benefit__item-3{
+            @include wave-decor;
+            &:before{
+                background-image: url(../images/wave-3.svg);
+                width: 254px;
+                height: 50px;
+                right: -73px;
+                top: 24px;
+            }
+        }
+        .benefit__item-1{
+            @include wave-decor;
         }
         .benefit__img{
             position: relative;
@@ -222,7 +240,102 @@
         }
     }
 }
-
+// PROPERTY SECTION
+.property{
+   
+    &__title{
+        margin-bottom: 77px;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 198.27px;
+        width: 100%;
+        &--center{
+            margin-left: -30px;
+            margin-top: -10px;
+        }
+    }
+    &__inner{
+        .property__content{
+            .content__box-1{
+                padding-left: 35px;
+                margin-bottom: 160px;
+                @include wave-decor;
+                &::before{
+                    background-image: url(../images/pointer-1.svg);
+                    width: 350px;
+                    height: 150px;
+                    left: 200px;
+                    bottom: -35px;
+                    position: absolute;
+                }
+            }
+            .content__box-2{
+                @include wave-decor;
+                padding-left: 30px;
+                &::before{
+                    background-image: url(../images/pointer-2.svg);
+                    width: 350px;
+                    height: 100px;
+                    left: 240px;
+                    bottom: 69%;
+                    position: absolute;
+                }
+            }
+            .content__box-3{
+                @include wave-decor;
+                &::before{
+                    background-image: url(../images/pointer-3.svg);
+                    width: 300px;
+                    height: 120px;
+                    left: -95%;
+                    bottom: 0;
+                    position: absolute;
+                    top: 13px;
+                }
+            }
+            .content__box-4{
+                @include wave-decor;
+                margin-top: 180px;
+                &::before{
+                    background-image: url(../images/pointer-4.svg);
+                    width: 300px;
+                    height: 100px;
+                    left: -50%;
+                    bottom: 73%;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    &__content{
+        .content__box{
+            width: 290px;
+            max-width: 100%;
+            font-size: 15px;
+            line-height: 18px;
+            @extend %ubuntu-light;
+        }
+    }
+}
+  //  position: relative;
+        //     &:first-child::before,
+        //     &:nth-child()::before,
+        //     &:nth-child()::before,
+        //     &:nth-child()::before{
+        //         content: '';
+        //         position: absolute;
+        //         right: 0;
+        //         background-image: url(../images/wave-3.svg);
+        //         width: 254px;
+        //         height: 50px;
+        //         right: -73px;
+        //         top: 24px;
+        //         background-repeat: no-repeat;
+        //         background-position: 0 0;
+        //     }
 // CONTACT SECTION
 .contact .social-list{
     flex-direction: column;

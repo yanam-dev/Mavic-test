@@ -58,3 +58,12 @@ $txt-color: #fff;
         opacity: 1;
     }
 }
+@mixin wave-decor{
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+}
