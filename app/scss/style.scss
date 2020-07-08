@@ -42,6 +42,7 @@
 .top{
     min-height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: top center;
     position: relative;
     padding: 30px 0 40px;
@@ -49,8 +50,8 @@
     position: relative;
     &::before{
         content: '';
-        background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
-        opacity: 0.4;
+        background: radial-gradient(52.97% 54.43% at 50% 60.57%, rgba(23,26,28,0) 34.28%, rgba(23,26,28,0) 49.29%, rgba(4,5,5,0.820343) 67.72%, rgba(5,5,6,0.792703) 78.08%, #000 86.89%);
+        opacity: 0.3;
         position: absolute;
         left: 0;
         right: 0;
@@ -242,7 +243,6 @@
 }
 // PROPERTY SECTION
 .property{
-   
     &__title{
         margin-bottom: 77px;
     }
@@ -320,22 +320,68 @@
         }
     }
 }
-  //  position: relative;
-        //     &:first-child::before,
-        //     &:nth-child()::before,
-        //     &:nth-child()::before,
-        //     &:nth-child()::before{
-        //         content: '';
-        //         position: absolute;
-        //         right: 0;
-        //         background-image: url(../images/wave-3.svg);
-        //         width: 254px;
-        //         height: 50px;
-        //         right: -73px;
-        //         top: 24px;
-        //         background-repeat: no-repeat;
-        //         background-position: 0 0;
-        //     }
+// QUERY SECTION
+.query{
+    &__title{
+
+    }
+    &__items{
+        max-width: 762px;
+        padding-bottom: 15px;
+        position: relative;
+        &:after{
+            content: url(../images/mavic-piece.png);
+            position: absolute;
+            right: -119px;
+            top: -115px;
+        }
+       .query__item{
+           max-width: 690px;
+           background: rgba(0, 0, 0, 0.3);
+           opacity: 0.9;
+           margin-bottom: 5px;
+           .query__item-title{
+            padding: 20px 10px 20px 39px;
+            line-height: 28px;
+            font-weight: 500;
+            color: rgba(#fff, .8);
+            cursor: pointer;
+            position: relative;
+            &:after{
+                content: url(../images/icons/arrow-down-acc.svg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 72px;
+                height: 67px;
+                background-color: #fff;
+                right: -72px;
+                top: 0;
+            }
+           }
+           &-txt{
+            font-size: 15px;
+            line-height: 22px;
+            padding: 0 5px 75px 50px;
+            margin: 0;
+            display: none;
+           }
+       } 
+       .query__item--active{
+            .query__item-txt{
+                display: block;
+            }
+        }
+        .query__item--active{
+            .query__item-title:after{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+
 // CONTACT SECTION
 .contact .social-list{
     flex-direction: column;

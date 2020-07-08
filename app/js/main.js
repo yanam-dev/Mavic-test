@@ -1,3 +1,5 @@
+// import { on } from "events";
+
 $(function(){
 
     $('.about__slider').slick({
@@ -6,5 +8,11 @@ $(function(){
         infinite: false
     });
 
-  
+   $('.query__item-title').on('click', function(){
+       
+    $('.query__item').removeClass('query__item--active');
+    $(this).parent().addClass('query__item--active');
+
+   });
+
 });
