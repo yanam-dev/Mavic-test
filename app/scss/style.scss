@@ -72,6 +72,7 @@
     }
     &__img{
         margin-bottom: 25px;
+        max-width: 100%;
     }
     &__txt{
         margin-bottom: 35px;
@@ -259,6 +260,7 @@
     }
     &__inner{
         .property__content{
+            margin-left: 20px;
             .content__box-1{
                 padding-left: 35px;
                 margin-bottom: 160px;
@@ -322,24 +324,22 @@
 }
 // QUERY SECTION
 .query{
-    &__title{
-
-    }
     &__items{
         max-width: 762px;
         padding-bottom: 15px;
+        margin-left: 30px;
         position: relative;
-        &:after{
-            content: url(../images/mavic-piece.png);
-            position: absolute;
-            right: -119px;
-            top: -115px;
-        }
        .query__item{
            max-width: 690px;
            background: rgba(0, 0, 0, 0.3);
            opacity: 0.9;
            margin-bottom: 5px;
+           &:first-child:after{
+            content: url(../images/mavic-piece.png);
+            position: absolute;
+            right: -320px;
+            top: -32px;
+        }
            .query__item-title{
             padding: 20px 10px 20px 39px;
             line-height: 28px;
@@ -383,14 +383,98 @@
 
 
 // CONTACT SECTION
+.contact{
+    &__title{
+        margin-bottom: 56px;
+    }
+    &__info{
+        margin-left: 56px;
+        margin-right: 55px;
+        &-box{
+            margin-bottom: 30px;
+            p{
+                font-size: 21px;
+                line-height: 24px;
+                @extend %ubuntu-bold;
+                margin: 0;
+                padding-bottom: 13px;
+            }
+            a{
+                display: block;
+                color: #fff;
+                margin-bottom: 5px;
+                cursor: pointer;
+                transition: all .3s;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+    }
+    &__inner{
+        margin-bottom: 136px;
+    }
+    &__form{
+        width: 570px;
+        max-width: 100%;
+        margin-right: 111px;
+        .form__inputs{
+            display: flex;
+            justify-content:space-between;
+            margin-bottom: 10px;
+        }
+        &-input{
+            width: 49%;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border:none;
+            outline: none;
+            @include form;
+            color: #fff;
+        }
+        &-textarea{
+            width: 570px;
+            padding: 15px;
+            border:none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            @include form;
+            height: 144px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        &-input,
+        &-textarea{
+            font-size: 15px;
+            @extend %ubuntu-light;
+            appearance: none;
+            border-radius: none;
+        }
+        .btn{
+            @extend %btn;
+            padding: 9px 15px;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+        }
+    }
+}
 .contact .social-list{
+    justify-content: center;
     flex-direction: column;
     li a{
         padding-left: 28px;
+        margin-bottom: 28px;
     }
-    .social-list-item > a{
-        @extend %socials-hover;
-    }
+    // .social-list-item > a{
+    //     @extend %socials-hover;
+    // }
+}
+.copy{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
 }
 
 @import "media";

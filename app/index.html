@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="content">
+  <!-- <div class="wrapper">
+    <div class="content"> -->
     <header class="header" id="header">
       <div class="container">
         <div class="header__top d-flex justify-content-between align-items-center">
@@ -46,8 +46,8 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="top d-flex" style="background-image: url('images/abstract.jpg')">
+    <main id="fullpage">
+      <section class="page-section top d-flex" style="background-image: url('images/abstract.jpg')">
         <div class="container">
           <div class="top__content d-flex">
             <h1 class="top__title">Mavic 2 Pro</h1>
@@ -265,20 +265,20 @@
       <section id="contact" class="page-section contact">
         <div class="container"> 
           <h3 class="contact__title title">Контакты</h3>
-          <div class="contact__inner">
+          <div class="contact__inner d-flex">
             <div class="contact__info">
               <div class="contact__info-box">
-                <p class="contact__info-title">Киев</h4>
+                <p class="contact__info-title">Киев</p>
                 <a href="tel:+80662233222" class="contact__info-phone">8 (066) 22 33 222</a>
                 <a href="mailto:dgi.mavic2pro.kiev@mail.ru" class="contact__info-mail">dgi.mavic2pro.kiev@mail.ru</a>
               </div>
               <div class="contact__info-box">
-                <p class="contact__info-title">Москва</h4>
+                <p class="contact__info-title">Москва</p>
                 <a href="tel:+74992233222" class="contact__info-phone">+7 (499) 567– 67 – 67</a>
                 <a href="mailto:dgi.mavic2pro.kiev@mail.ru" class="contact__info-mail">dgi.mavic2pro.kiev@mail.ru</a>
               </div>
               <div class="contact__info-box">
-                <p class="contact__info-title">Минск</h4>
+                <p class="contact__info-title">Минск</p>
                 <a href="tel:+375172233222" class="contact__info-phone">3 (7517) 22 33 222</a>
                 <a href="mailto:dgi.mavic2pro.kiev@mail.ru" class="contact__info-mail">dgi.mavic2pro.kiev@mail.ru</a>
               </div>
@@ -287,13 +287,15 @@
               <h4>Остались вопросы?</h4>
               <p class="contact__form-label">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
               <form>
-                <input class="contact__form-input" type="text" placeholder="Ваше имя" required>
-                <input class="contact__form-input" type="e-mail" placeholder="Ваш e-mail" required>
+                <div class="form__inputs">
+                  <input class="contact__form-input" type="text" placeholder="Ваше имя" required>
+                  <input class="contact__form-input" type="e-mail" placeholder="Ваш e-mail" required>
+                </div>
                 <textarea class="contact__form-textarea" placeholder="Что вас интересует" id="" cols="30" rows="10"></textarea>
                 <button class="btn" type="submit">ОТПРАВИТЬ</button>
               </form>
             </div>
-            <ul class="social-list d-flex">
+            <ul class="social-list d-flex align-items-center">
               <li class="social-list-item">
                 <a href="#" class="social-fb" target="_blank">
                   <img src="images/icons/fb.svg" alt="Facebook">
@@ -311,13 +313,15 @@
               </li> 
             </ul>
           </div>
-          <div class="copy">
+          <footer id="footer" class="footer">
+            <div class="copy">
               &#169; DJI, 2020
-          </div>
+            </div>
+          </footer>
         </div>
       </section>
     </main>
-
+  </div>
   <!-- <footer class="footer">
     <div class="container">
       
