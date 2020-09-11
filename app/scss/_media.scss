@@ -1,0 +1,100 @@
+@media (max-width: 1200px){
+    .header__order .phone{
+        display: none;
+    }
+    .header__order{
+        margin-left: auto;
+        padding-right: 100px;
+    }
+    .menu {
+        order: 1;
+    }
+    .menu__list li{
+        display: none!important;
+    }
+    .menu__btn{
+        display: block!important;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:after,
+        &:before{
+            content:'';
+            width: 24px;
+            height: 2px;
+            background-color: #e0e0e0;
+            margin-bottom: 4px;
+            display: block;
+            transition: transform 1s;
+        }
+        &:after{
+            margin-bottom: 0;
+            width: 16px;
+            margin-left: auto;
+        }
+        .menu__btn-line{
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            margin-bottom: 4px;
+            transition: opacity 2.5s;
+        }  
+        &.menu__btn--active{
+            .menu__btn-line{
+                opacity: 0;
+                transition: opacity 0s;
+            }
+            &::before{
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+            &::after{
+                width: 24px;
+                transform: rotate(45deg) translate(-2px,-2px);
+            }
+        }
+    }
+     
+    .top-page__title{
+        font-size: 84px;
+    }
+    .top-page__txt{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .page-section{
+        align-items: center;
+    }
+}
+@media (max-width: 1100px){
+    .top-page__txt{
+        margin-bottom: 20%;
+    }
+}
+@media (max-width: 800px){
+    .top{
+        &::before{
+            background: radial-gradient(52.97% 54.43% at 50% 60.57%, rgba(23,26,28,0) 34.28%, rgba(23,26,28,0) 38.29%, rgba(4,5,5,0.820343) 67.72%, rgba(5,5,6,0.792703) 78.08%, #000 86.89%);
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .header__order{
+        margin: 0 auto;
+        padding-right: 0;
+    }
+}
+@media (max-width: 540px){
+    .top-page__title{
+        display: none;
+    }
+    .top-page__txt{
+        margin-bottom: 30%;
+    }
+    .scroll__btn{
+        padding: 13px 0;
+    }
+}
