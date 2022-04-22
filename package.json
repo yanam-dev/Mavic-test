@@ -33,7 +33,7 @@
       "android >= 4",
       "bb >= 10"
     ],
-    "fullpage.js": "^3.0.9",
+    "fullpage.js": "^4.0.5",
     "slick-carousel": "^1.8.1"
   }
 }
